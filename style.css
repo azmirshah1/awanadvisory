@@ -7747,6 +7747,13 @@ div#wrapper.open>.offcanvas-mask {
     position: relative;
 }
 
+.breadcrumb-wrap-contact {
+    background-image: url("img/contactus/subContact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .breadcrumb-img1 {
     position: absolute;
     bottom: 0;
