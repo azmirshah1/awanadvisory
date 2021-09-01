@@ -7761,6 +7761,13 @@ div#wrapper.open>.offcanvas-mask {
     position: relative;
 }
 
+.breadcrumb-wrap-calculator {
+    background-image: url("img/takafulCalculator/subCalculator.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .breadcrumb-wrap-blog {
     background-image: url("img/blog/subBlog.png");
     background-repeat: no-repeat;
@@ -14797,7 +14804,7 @@ div#wrapper.open>.offcanvas-mask {
     padding-left: 40px;
     border-radius: 4px;
     position: relative;
-    background-image: url(img/service/accordian1.png);
+    background-image: url(img/takafulCalculator/masjid.jpg);
     z-index: 5;
 }
 
@@ -14847,7 +14854,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .consulation-box1 {
     padding: 45px 60px 25px 60px;
-    background-image: url(img/service/consulation1.png);
+    background-image: url(img/takafulCalculator/klcc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
