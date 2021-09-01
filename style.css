@@ -7754,6 +7754,13 @@ div#wrapper.open>.offcanvas-mask {
     position: relative;
 }
 
+.breadcrumb-wrap-aboutus {
+    background-image: url("img/aboutus/subAboutus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .breadcrumb-wrap-blog {
     background-image: url("img/blog/subBlog.png");
     background-repeat: no-repeat;
