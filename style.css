@@ -7782,6 +7782,13 @@ div#wrapper.open>.offcanvas-mask {
     position: relative;
 }
 
+.breadcrumb-wrap-hibah {
+    background-image: url("img/HibahAmanahTakaful/subHibah.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .breadcrumb-img1 {
     position: absolute;
     bottom: 0;
