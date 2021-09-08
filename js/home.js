@@ -21,11 +21,11 @@
         animSpeed: 1000, // Slide transition speed
         pauseTime: 5000, // How long each slide will show
         startSlide: 0, // Set starting Slide (0 index)
-        directionNav: true, // Next & Prev navigation
+        directionNav: false, // Next & Prev navigation
         controlNav: false, // 1,2,3... navigation
         controlNavThumbs: false, // Use thumbnails for Control Nav
         pauseOnHover: false, // Stop animation while hovering
-        manualAdvance: false, // Force manual transitions
+        manualAdvance: false, // Force manual transitions - change true if u want it run manually
         prevText: 'Prev', // Prev directionNav text
         nextText: 'Next', // Next directionNav text
         randomStart: false, // Start on a random slide
@@ -72,7 +72,7 @@
         controlNav: true, // 1,2,3... navigation
         controlNavThumbs: false, // Use thumbnails for Control Nav
         pauseOnHover: false, // Stop animation while hovering
-        manualAdvance: true, // Force manual transitions
+        manualAdvance: true, // Force manual transitions - change it when u want it run manually
         prevText: 'Prev', // Prev directionNav text
         nextText: 'Next', // Next directionNav text
         randomStart: false, // Start on a random slide
