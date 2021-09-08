@@ -1,10 +1,9 @@
 /*---------------------------------------------
 
-Template Name: Financo |  Financo Template
-Template URL: http://radiustheme.com/demo/html/financo/
-Description: Financo |  Financo Template
-Author: RadiusTheme
-Author URL: http://www.radiustheme.com 
+Template For: Awan Advisory
+Template URL: https://awanadvisory.com/
+Author: Azmir Shah
+Author URL: https://azmirshah.com/
 Version: 1.0.0
 
 ===================   
@@ -2906,7 +2905,7 @@ nav.template-main-menu>ul>li>a {
     font-weight: 700;
     line-height: 1;
     display: block;
-    color: #000000;
+    color: #FFFFFF;
     text-transform: uppercase;
     font-family: 'Barlow', sans-serif;
     position: relative;
@@ -2916,7 +2915,7 @@ nav.template-main-menu>ul>li>a:after {
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
-    color: #646464;
+    color: #FFFFFF;
     position: absolute;
     right: 0;
 }
@@ -3170,7 +3169,7 @@ nav.template-main-menu>ul>li:hover .template-mega-menu {
 }
 
 .header-menu.menu-layout1 {
-    background-color: #ffffff;
+    background-color: #000000;
     box-shadow: 0px 8px 18px 0px rgba(154, 154, 154, 0.16);
 }
 
@@ -4834,6 +4833,39 @@ div#wrapper.open>.offcanvas-mask {
 /*=======================================================================
 5. Template Page Style 
 =========================================================================*/
+
+
+/*------------------- 5.0 Home -------------------*/
+
+.btn-advisor {
+    background-color: #FA360A;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 25px 8px;
+}
+
+.btn-advisor:hover {
+    background-color: white;
+    color: #FA360A;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 24px 8px;
+}
+
+.logo-area {
+    width: 250px;
+    padding-top: 15px;
+    margin-left: -20px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .btn-advisor {
+        border-radius: 20px;
+        padding: 5px 0px 5px;
+        width: 200%;
+        margin-right: 20px;
+    }
+}
 
 
 /*------------------- 5.1 About -------------------*/
