@@ -4865,6 +4865,12 @@ div#wrapper.open>.offcanvas-mask {
         width: 200%;
         margin-right: 20px;
     }
+    .mobile-menu-nav-back {
+        background-color: black;
+    }
+    .mean-container a.meanmenu-reveal span {
+        background: white;
+    }
 }
 
 

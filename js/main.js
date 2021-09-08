@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
     "use strict";
     /*-------------------------------------
         Contact Form initiating
@@ -59,62 +59,62 @@ Section background image
 
     function imageFunction() {
 
-    $('[data-bg-image]').each(function () {
-    var img = $(this).data('bg-image');
-    $(this).css({
-    backgroundImage: 'url(' + img + ')',
-    });
-    });
+        $('[data-bg-image]').each(function() {
+            var img = $(this).data('bg-image');
+            $(this).css({
+                backgroundImage: 'url(' + img + ')',
+            });
+        });
     }
 
-  /*-------------------------------------
-    Progress Bar Init
-    --------------------------------------*/
+    /*-------------------------------------
+      Progress Bar Init
+      --------------------------------------*/
     if ($.fn.circleProgress !== undefined) {
 
-       $('.circle-progress').circleProgress({
+        $('.circle-progress').circleProgress({
             size: 160,
             thickness: 9,
             emptyFill: "#fb542f",
             fill: {
-              color: "#fff"
+                color: "#fff"
             },
             startAngle: 0,
         }).on('circle-animation-progress', function(event, progress) {
-             var data_value = $(this).data('value'); 
-             var data_value_full = data_value * 100;
+            var data_value = $(this).data('value');
+            var data_value_full = data_value * 100;
             $(this).find('span').html(Math.round(data_value_full * progress) + '<i>%</i>');
         });
     }
     /*-------------------------------------
         Sal Init
     -------------------------------------*/
-   if(typeof sal === 'function'){
-    sal({
+    if (typeof sal === 'function') {
+        sal({
             threshold: 0.05,
             once: true
         });
 
-    if ($(window).outerWidth() < 1025) {
-        var scrollAnimations = sal();
-        scrollAnimations.disable();
+        if ($(window).outerWidth() < 1025) {
+            var scrollAnimations = sal();
+            scrollAnimations.disable();
+        }
     }
-   }
-    
+
     /*-------------------------------------
     Jquery Serch Box
     -------------------------------------*/
-    $('a[href="#header-search"]').on("click", function (event) {
+    $('a[href="#header-search"]').on("click", function(event) {
         event.preventDefault();
         var target = $("#header-search");
         target.addClass("open");
-        setTimeout(function () {
+        setTimeout(function() {
             target.find('input').focus();
         }, 600);
         return false;
     });
 
-    $("#header-search, #header-search button.close").on("click keyup", function (event) {
+    $("#header-search, #header-search button.close").on("click keyup", function(event) {
         if (
             event.target === this ||
             event.target.className === "close" ||
@@ -123,17 +123,17 @@ Section background image
             $(this).removeClass("open");
         }
     });
-     /*-------------------------------------
+    /*-------------------------------------
     Page Preloader
     -------------------------------------*/
-    $("#preloader").fadeOut("slow", function () {
+    $("#preloader").fadeOut("slow", function() {
         $(this).remove();
     });
 
     /*---------------------------------------
     On Click Section Switch
     --------------------------------------- */
-    $('[data-type="section-switch"]').on('click', function () {
+    $('[data-type="section-switch"]').on('click', function() {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             if (target.length > 0) {
@@ -179,7 +179,7 @@ Section background image
         Google Map
     -------------------------------------*/
     if ($("#googleMap").length) {
-        window.onload = function () {
+        window.onload = function() {
             var styles = [{
                 featureType: 'water',
                 elementType: 'geometry.fill',
@@ -241,19 +241,19 @@ Section background image
             });
         };
     }
-    
-     /*-------------------------------------
+
+    /*-------------------------------------
     MeanMenu activation code
     --------------------------------------*/
     if ($.fn.meanmenu) {
         $('nav#dropdown').meanmenu({
-            siteLogo: "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index.html'><img src='img//logo/logo4.png' alt='logo' class='img-fluid'/></a></div>"
+            siteLogo: "<div class='mobile-menu-nav-back'><a class='logo-mobile' href='index.html'><img src='img//logo/awanmobile.png' alt='logo' class='img-fluid'/></a></div>"
         });
     }
     /*-------------------------------------
     Offcanvas Menu activation code
     -------------------------------------*/
-    $('#wrapper').on('click', '.offcanvas-menu-btn', function (e) {
+    $('#wrapper').on('click', '.offcanvas-menu-btn', function(e) {
         e.preventDefault();
         var $this = $(this),
             wrapper = $(this).parents('body').find('>#wrapper'),
@@ -284,17 +284,17 @@ Section background image
                 });
             }
         }
-        $(".offcanvas-mask, .offcanvas-close").on('click', function () {
+        $(".offcanvas-mask, .offcanvas-close").on('click', function() {
             removeOffcanvas();
         });
 
         return false;
     });
 
-/*-------------------------------------
-Carousel slider initiation
--------------------------------------*/
-    $(".rc-carousel").each(function () {
+    /*-------------------------------------
+    Carousel slider initiation
+    -------------------------------------*/
+    $(".rc-carousel").each(function() {
         var carousel = $(this),
             loop = carousel.data("loop"),
             Canimate = carousel.data("animate"),
@@ -385,13 +385,13 @@ Carousel slider initiation
                 nav_next = $(".rt-next", nav),
                 nav_prev = $(".rt-prev", nav);
 
-            nav_next.on("click", function (e) {
+            nav_next.on("click", function(e) {
                 e.preventDefault();
                 owl.trigger('next.owl.carousel');
                 return false;
             });
 
-            nav_prev.on("click", function (e) {
+            nav_prev.on("click", function(e) {
                 e.preventDefault();
                 owl.trigger('prev.owl.carousel');
                 return false;
@@ -399,4 +399,4 @@ Carousel slider initiation
         }
     });
 
- })(jQuery);
+})(jQuery);
