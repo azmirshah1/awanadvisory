@@ -1074,10 +1074,21 @@ h6 {
     color: #444444;
 }
 
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .slider-area .slider-content .item-paragraph {
+        display: none;
+    }
+    .s-tb {
+        height: 70%;
+    }
+    /* your css rules for ipad portrait */
+}
+
 @media only screen and (max-width: 991px) {
     .slider-area .slider-content .item-paragraph {
         width: 80%;
         margin-bottom: 20px;
+        display: none;
     }
 }
 
