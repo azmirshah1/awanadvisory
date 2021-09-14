@@ -5252,6 +5252,13 @@ div#wrapper.open>.offcanvas-mask {
     }
 }
 
+@media only screen and (max-width: 575px) {
+    .about-finnaco-wrap1 {
+        margin-top: -20px;
+        text-align: center;
+    }
+}
+
 .about-finnaco-wrap1 .background-shape8 {
     position: absolute;
     bottom: 100px;
@@ -5265,7 +5272,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .about-box1 .section-subtitle {
-    color: #444444;
+    color: #FA360A;
     font-size: 18px;
     font-weight: 700;
     font-family: 'Barlow', sans-serif;
@@ -5273,7 +5280,8 @@ div#wrapper.open>.offcanvas-mask {
     margin-bottom: 10px;
 }
 
-.about-box1 .section-subtitle:before {
+
+/* .about-box1 .section-subtitle:before {
     content: "";
     height: 4px;
     width: 15px;
@@ -5295,7 +5303,7 @@ div#wrapper.open>.offcanvas-mask {
     left: 150px;
     border-radius: 10px;
     border: none;
-}
+} */
 
 .about-box1 .section-title {
     color: #000;
@@ -5329,10 +5337,11 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 991px) {
     .about-box1 p {
-        display: -webkit-box;
+        /* display: -webkit-box; */
+        display: block;
         -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        /* -webkit-box-orient: vertical;
+        overflow: hidden; */
     }
 }
 
@@ -10462,6 +10471,7 @@ div#wrapper.open>.offcanvas-mask {
     .financo-activities-wrap1 .row.no-gutters {
         margin-left: -15px;
         margin-right: -15px;
+        margin-top: -20px;
     }
     .financo-activities-wrap1 .row.no-gutters>[class^="col-"] {
         padding-left: 15px;
@@ -10486,7 +10496,16 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 575px) {
     .financo-activities-box1 {
-        padding: 50px 30px 50px 30px;
+        padding: 30px 20px 20px 20px;
+        text-align: center;
+    }
+    .financo-activities-box1 .item-img-round:before {
+        left: 23px !important;
+        right: 23px;
+    }
+    .financo-activities-box1 .item-img {
+        left: 25px;
+        right: 23px;
     }
 }
 
@@ -10565,9 +10584,9 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 479px) {
     .financo-activities-box1 p {
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 0;
         -webkit-box-orient: vertical;
-        overflow: hidden;
+        overflow: inherit;
     }
 }
 
@@ -12508,7 +12527,7 @@ div#wrapper.open>.offcanvas-mask {
     .progress-bar-box1 {
         padding-left: 15px;
         padding-right: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 250px;
     }
 }
 
