@@ -5289,6 +5289,15 @@ div#wrapper.open>.offcanvas-mask {
     margin-bottom: 10px;
 }
 
+.about-box8 .product-title {
+    color: #FA360A !important;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+    margin-bottom: 10px !important;
+}
+
 
 /* .about-box1 .section-subtitle:before {
     content: "";
@@ -5420,7 +5429,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .about-finnaco-wrap2 {
-    padding: 163px 0px 130px 0px;
+    padding: 100px 0px 10px 0px;
     position: relative;
 }
 
@@ -8241,6 +8250,9 @@ div#wrapper.open>.offcanvas-mask {
     .call-back-wrap2 {
         transform: translateY(0px);
         padding: 20px 0px 50px 0px;
+    }
+    .call-back-box2 {
+        display: none;
     }
 }
 
