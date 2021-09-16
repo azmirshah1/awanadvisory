@@ -2333,6 +2333,10 @@ h6 {
     z-index: -10;
 }
 
+.background-shape68 img {
+    height: 400px;
+}
+
 @media only screen and (max-width: 1199px) {
     .background-shape68 {
         display: none;
@@ -2380,7 +2384,8 @@ h6 {
 }
 
 .background-footer .footer-left .footer-logo {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    max-width: 300px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -8056,7 +8061,7 @@ div#wrapper.open>.offcanvas-mask {
 /*------------------- 5.7 Call-back -------------------*/
 
 .call-back-wrap {
-    transform: translateY(120px);
+    transform: translateY(70px);
     position: relative;
     z-index: 3;
 }
@@ -8076,7 +8081,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .call-back-box1 {
     background-color: #1a1a1a;
-    padding: 52px 60px 61px 60px;
+    padding: 19px 60px 15px 60px;
 }
 
 @media only screen and (max-width: 1199px) {
