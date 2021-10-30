@@ -7850,6 +7850,14 @@ div#wrapper.open>.offcanvas-mask {
     transition: all 0.3s ease-in-out;
 }
 
+.brand-title {
+    font-weight: 700;
+    color: #FA360A;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
+
 
 /*------------------- 5.6 Breadcrumb -------------------*/
 
