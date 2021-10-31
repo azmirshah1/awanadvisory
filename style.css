@@ -7859,6 +7859,28 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 
+/* modal background */
+
+.modal-backdrop {
+    opacity: 0.7 !important;
+}
+
+.modal-content {
+    background-color: transparent;
+}
+
+.quote-close {
+    background-color: white;
+    color: #fa360a;
+    border-color: #fa360a;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-left: 90%;
+}
+
+
 /*------------------- 5.6 Breadcrumb -------------------*/
 
 .breadcrumb-wrap {
