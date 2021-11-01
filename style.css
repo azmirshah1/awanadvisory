@@ -4906,9 +4906,39 @@ div#wrapper.open>.offcanvas-mask {
     padding: 8px 24px 8px;
 }
 
+.btn-advisor1 {
+    background-color: #FA360A;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 25px 8px;
+}
+
+.btn-advisor1:hover {
+    background-color: white;
+    color: #FA360A;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 24px 8px;
+}
+
 @media only screen and (max-width: 1199px) {
     .btn-advisor {
         display: none;
+    }
+    .btn-advisor1 {
+        width: 40% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .btn-advisor1 {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .btn-advisor1 {
+        width: 80% !important;
     }
 }
 
