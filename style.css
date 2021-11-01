@@ -50,6 +50,7 @@ CSS INDEX
     5.23 Team
     5.24 Testimonial
     5.25 Why-choose
+    5.26 Calculator
     
 /*=======================================================================
 /*=======================================================================
@@ -5637,7 +5638,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .about-box3 .about-box8 p {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     color: #646464;
     padding-right: 60px;
 }
@@ -7992,7 +7993,7 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 767px) {
     .breadcrumb-box {
-        padding: 0px;
+        padding: 20px 0px 10px;
     }
 }
 
@@ -15040,9 +15041,10 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 575px) {
     .choose-us-box1 .accordion .card .card-body p {
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        /* -webkit-line-clamp: 4; */
         -webkit-box-orient: vertical;
         overflow: hidden;
+        text-align: justify;
     }
 }
 
@@ -15225,4 +15227,38 @@ div#wrapper.open>.offcanvas-mask {
 .consulation-box1 .message-box .form-group .item-btn:hover {
     color: #fa360a;
     background-color: #fff;
+}
+
+
+/*------------------- 5.26 Calculator Takaful -------------------*/
+
+.disclaimer-calculator {
+    margin-top: -40px;
+    margin-bottom: -30px;
+    font-style: italic;
+    font-size: 14px;
+    color: grey;
+}
+
+@media only screen and (max-width: 767px) {
+    .disclaimer-calculator {
+        text-align: justify;
+        padding: 20px 15px;
+    }
+}
+
+.cal-header {
+    margin-top: -60px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+    .cal-header {
+        padding: 50px 20px 0px 20px;
+        margin-bottom: -10px;
+    }
+    .cal-header p {
+        text-align: justify;
+    }
 }
