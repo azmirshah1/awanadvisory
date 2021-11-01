@@ -4966,6 +4966,17 @@ div#wrapper.open>.offcanvas-mask {
 
 /*------------------- 5.1 About -------------------*/
 
+.about-awan p.heading-subtitle {
+    color: #fa360a;
+}
+
+.company-value-wrap .item-content p.heading-subtitle {
+    color: #fa360a;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Barlow', sans-serif;
+}
+
 .about-wrap-layout1 {
     padding: 110px 0px;
 }
@@ -4998,7 +5009,7 @@ div#wrapper.open>.offcanvas-mask {
     background-color: #ffa996;
     position: absolute;
     bottom: 12px;
-    left: 130px;
+    left: 180px;
     border-radius: 10px;
     border: none;
 }
@@ -5010,7 +5021,7 @@ div#wrapper.open>.offcanvas-mask {
     background-color: #fa360a;
     position: absolute;
     bottom: 12px;
-    left: 151px;
+    left: 201px;
     border-radius: 10px;
     border: none;
 }
@@ -5063,9 +5074,10 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 767px) {
     .about-box4 p {
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 8;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        text-align: justify;
     }
 }
 
@@ -8666,11 +8678,18 @@ div#wrapper.open>.offcanvas-mask {
 .company-value-wrap {
     padding: 34px 0px 120px 0px;
     color: #fff;
+    margin-top: -100px;
 }
 
 @media only screen and (max-width: 1199px) {
     .company-value-wrap {
-        padding: 34px 0px 50px 0px;
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .company-value-wrap {
+        margin-top: -10px;
     }
 }
 
