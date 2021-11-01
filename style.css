@@ -1862,6 +1862,16 @@ h6 {
 
 /*------------------- 4.1 Footer Menu -------------------*/
 
+.footer-gap {
+    padding-top: 170px;
+}
+
+@media only screen and (max-width: 575px) {
+    .footer-gap {
+        padding-top: 0px;
+    }
+}
+
 .footer-area1 {
     padding: 100px 0;
     background-color: #fff;
@@ -2322,7 +2332,7 @@ h6 {
 
 @media only screen and (max-width: 1439px) {
     .footer-area2 {
-        padding: 40px 0 44px 0;
+        padding: 0px 0 44px 0;
     }
 }
 
@@ -2342,6 +2352,10 @@ h6 {
     .background-shape68 {
         display: none;
     }
+}
+
+.background-shape68 img.req-call {
+    height: 480px;
 }
 
 .background-footer {
@@ -5617,7 +5631,7 @@ div#wrapper.open>.offcanvas-mask {
     .about-box3 .about-box8 .heading-title {
         font-size: 30px;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         padding-right: 0;
@@ -5632,8 +5646,10 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 479px) {
     .about-box3 .about-box8 .heading-title {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 36px;
+        line-height: 38px;
+        font-weight: bold;
+        text-align: left;
     }
 }
 
@@ -5655,7 +5671,7 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 991px) {
     .about-box3 .about-box8 p {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 }
 
@@ -5806,6 +5822,50 @@ div#wrapper.open>.offcanvas-mask {
     left: 140px;
     border-radius: 10px;
     border: none;
+}
+
+@media only screen and (max-width: 479px) {
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:before {
+        bottom: 30px;
+        left: 160px;
+    }
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:after {
+        bottom: 30px;
+        left: 180px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:before {
+        bottom: 30px;
+        left: 140px;
+    }
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:after {
+        bottom: 30px;
+        left: 160px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:before {
+        bottom: 30px;
+        left: 140px;
+    }
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:after {
+        bottom: 30px;
+        left: 160px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:before {
+        bottom: 30px;
+        left: 120px;
+    }
+    .about-box3 .about-box8 .media .media-body2 .item-subtitle:after {
+        bottom: 30px;
+        left: 140px;
+    }
 }
 
 
@@ -11320,7 +11380,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .personal-info-wrap2 {
     background-color: #111111;
-    padding: 125px 0px 215px 0px;
+    padding: 55px 0px 215px 0px;
     position: relative;
     overflow: hidden;
 }
@@ -15253,6 +15313,10 @@ div#wrapper.open>.offcanvas-mask {
     padding-left: 14px;
 }
 
+.justify {
+    text-align: justify;
+}
+
 @media only screen and (max-width: 767px) {
     .cal-header {
         padding: 50px 20px 0px 20px;
@@ -15260,5 +15324,11 @@ div#wrapper.open>.offcanvas-mask {
     }
     .cal-header p {
         text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .profile-calculator {
+        margin-bottom: -110px;
     }
 }
