@@ -9448,6 +9448,114 @@ div#wrapper.open>.offcanvas-mask {
     overflow: hidden;
 }
 
+
+/* Benefit Box */
+
+.benefit-box p {
+    color: #646464;
+}
+
+.benefit-box {
+    background-color: #fafafa;
+    padding: 20px 15px 20px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.benefit-box:hover {
+    background-color: antiquewhite;
+    border-bottom: 4px solid orangered;
+}
+
+@media only screen and (max-width: 991px) {
+    .benefit-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .benefit-box {
+        padding: 43px 25px 25px 25px;
+    }
+}
+
+.benefit-box:hover {
+    background-color: antiquewhite;
+}
+
+.benefit-box .heading-title:before {
+    content: "";
+    height: 4px;
+    width: 15px;
+    background-color: #ffa996;
+    position: absolute;
+    top: 70px;
+    left: 40%;
+    border-radius: 10px;
+    border: none;
+}
+
+.benefit-box .heading-title:after {
+    content: "";
+    height: 4px;
+    width: 34px;
+    background-color: #fa360a;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    border-radius: 10px;
+    border: none;
+}
+
+.benefit-box .heading-title {
+    color: #fa360a;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .benefit-box .heading-title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .benefit-box .heading-title {
+        font-size: 22px;
+    }
+}
+
+.benefit-box .logo-benefit {
+    width: 50%;
+}
+
+.benefit-box .item-img {
+    margin-bottom: 20px;
+}
+
+.benefit-box p {
+    color: black;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 220px;
+}
+
+@media only screen and (max-width: 479px) {
+    .benefit-box p {
+        min-height: 110px;
+    }
+}
+
+
+/* Benefit Box end*/
+
 .consulting-button {
     position: absolute;
     bottom: -80px;
