@@ -35,297 +35,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        .main-timeline {
-            font-family: 'Roboto', sans-serif;
-            padding: 20px 0;
-            position: relative;
-        }
-        
-        .main-timeline:before,
-        .main-timeline:after {
-            content: '';
-            height: 40px;
-            width: 40px;
-            background-color: #e7e7e7;
-            border-radius: 50%;
-            border: 10px solid #303334;
-            transform: translateX(-50%);
-            position: absolute;
-            left: 50%;
-            top: -15px;
-            z-index: 2;
-        }
-        
-        .main-timeline:after {
-            top: auto;
-            bottom: 15px;
-        }
-        
-        .main-timeline .timeline {
-            padding: 35px 0;
-            margin-top: -30px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .main-timeline .timeline:before,
-        .main-timeline .timeline:after {
-            content: '';
-            height: 100%;
-            width: 50%;
-            border-radius: 100px 0 0 100px;
-            border: 15px solid #46B2BC;
-            border-right: none;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-        }
-        
-        .main-timeline .timeline:after {
-            height: calc(100% - 30px);
-            width: calc(50% - 12px);
-            border-color: #65C7D0;
-            left: 12px;
-            top: 15px;
-        }
-        
-        .main-timeline .timeline-content {
-            display: inline-block;
-        }
-        
-        .main-timeline .timeline-content:hover {
-            text-decoration: none;
-        }
-        
-        .main-timeline .timeline-year {
-            color: #65C7D0;
-            font-size: 50px;
-            font-weight: 600;
-            display: inline-block;
-            transform: translateY(-50%);
-            position: absolute;
-            top: 50%;
-            left: 10%;
-        }
-        
-        .main-timeline .timeline-icon {
-            color: #65C7D0;
-            font-size: 80px;
-            display: inline-block;
-            transform: translateY(-50%);
-            position: absolute;
-            left: 34%;
-            top: 50%;
-        }
-        
-        .main-timeline .content {
-            color: #909090;
-            width: 50%;
-            padding: 20px;
-            display: inline-block;
-            float: right;
-        }
-        
-        .main-timeline .title {
-            color: #65C7D0;
-            font-size: 22px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 0 0 5px 0;
-        }
-        
-        .main-timeline .description {
-            font-size: 15px;
-            letter-spacing: 1px;
-            margin: 0;
-        }
-        
-        .main-timeline .timeline:nth-child(even):before {
-            left: auto;
-            right: 0;
-            border-radius: 0 100px 100px 0;
-            border: 15px solid red;
-            border-left: none;
-        }
-        
-        .main-timeline .timeline:nth-child(even):after {
-            left: auto;
-            right: 12px;
-            border: 15px solid green;
-            border-left: none;
-            border-radius: 0 100px 100px 0;
-        }
-        
-        .main-timeline .timeline:nth-child(even) .content {
-            float: left;
-        }
-        
-        .main-timeline .timeline:nth-child(even) .timeline-year {
-            left: auto;
-            right: 10%;
-        }
-        
-        .main-timeline .timeline:nth-child(even) .timeline-icon {
-            left: auto;
-            right: 32%;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+2):before {
-            border-color: #EA3C14;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+2):after {
-            border-color: #EF5720;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+2) .timeline-icon {
-            color: #EA3C14;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+2) .timeline-year {
-            color: #EA3C14;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+2) .title {
-            color: #EA3C14;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+3):before {
-            border-color: #8CC63E;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+3):after {
-            border-color: #6CAF29;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+3) .timeline-icon {
-            color: #8CC63E;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+3) .timeline-year {
-            color: #8CC63E;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+3) .title {
-            color: #8CC63E;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+4):before {
-            border-color: #F99324;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+4):after {
-            border-color: #FBB03B;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+4) .timeline-icon {
-            color: #F99324;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+4) .timeline-year {
-            color: #F99324;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+4) .title {
-            color: #F99324;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+5):before {
-            border-color: #0071BD;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+5):after {
-            border-color: #0050A3;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+5) .timeline-icon {
-            color: #0071BD;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+5) .timeline-year {
-            color: #0071BD;
-        }
-        
-        .main-timeline .timeline:nth-child(5n+5) .title {
-            color: #0071BD;
-        }
-        
-        @media screen and (max-width:1200px) {
-            .main-timeline .timeline:after {
-                border-radius: 88px 0 0 88px;
-            }
-            .main-timeline .timeline:nth-child(even):after {
-                border-radius: 0 88px 88px 0;
-            }
-        }
-        
-        @media screen and (max-width:767px) {
-            .main-timeline .timeline {
-                margin-top: -19px;
-            }
-            .main-timeline .timeline:before {
-                border-radius: 50px 0 0 50px;
-                border-width: 10px;
-            }
-            .main-timeline .timeline:after {
-                height: calc(100% - 18px);
-                width: calc(50% - 9px);
-                border-radius: 43px 0 0 43px;
-                border-width: 10px;
-                top: 9px;
-                left: 9px;
-            }
-            .main-timeline .timeline:nth-child(even):before {
-                border-radius: 0 50px 50px 0;
-                border-width: 10px;
-            }
-            .main-timeline .timeline:nth-child(even):after {
-                height: calc(100% - 18px);
-                width: calc(50% - 9px);
-                border-radius: 0 43px 43px 0;
-                border-width: 10px;
-                top: 9px;
-                right: 9px;
-            }
-            .main-timeline .timeline-icon {
-                font-size: 60px;
-            }
-            .main-timeline .timeline-year {
-                font-size: 40px;
-            }
-        }
-        
-        @media screen and (max-width:479px) {
-            .main-timeline .timeline-icon {
-                font-size: 50px;
-                transform: translateY(0);
-                top: 25%;
-                left: 10%;
-            }
-            .main-timeline .timeline-year {
-                font-size: 25px;
-                transform: translateY(0);
-                top: 65%;
-                left: 9%;
-            }
-            .main-timeline .content {
-                width: 68%;
-                padding: 10px;
-            }
-            .main-timeline .title {
-                font-size: 18px;
-            }
-            .main-timeline .timeline:nth-child(even) .timeline-icon {
-                right: 10%;
-            }
-            .main-timeline .timeline:nth-child(even) .timeline-year {
-                right: 9%;
-            }
-        }
-    </style>
 </head>
 
 <body class="sticky-header">
@@ -453,7 +162,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="single-portfolio-box2">
-                            <p class="section-subtitle">All you need to know about Hibah Amanah Takful</p>
+                            <!-- <p class="section-subtitle">All you need to know about Hibah Amanah Takful</p>
                             <h2 class="section-title">What is a Hibah Takaful?</h2>
                             <p>You realize that life has its ups and downs, and you want to be prepared for it. So go ahead with your intentions and do your best for those you love, whether for your children, or anyone for example to an orphan. Many takaful
                                 owners make the choice to grant takaful as their last resort.</p>
@@ -493,14 +202,14 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <h2 class="section-title">Are you looking for a hibah takaful plan that best fit for your and your family?</h2>
-                            <p>3 important things to look for before choosing a Hibah Takaful plan</p>
+                            <p> This is 3 important things to look for before choosing a Hibah Takaful plan for yourself and family.</p>
                             <div class="row gutters-20">
                                 <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box consulting-service5">
-                                        <h3 class="heading-title">Protect Yourself</h3>
+                                        <h3 class="heading-title">1. Protect Yourself</h3>
                                         <div class="item-img">
                                             <img class="logo-benefit" src="img/HibahAmanahTakaful/protect.gif" alt="figure">
                                         </div>
@@ -512,7 +221,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box consulting-service5">
-                                        <h3 class="heading-title">No limit</h3>
+                                        <h3 class="heading-title">2. No limit</h3>
                                         <div class="item-img">
                                             <img class="logo-benefit" src="img/HibahAmanahTakaful/nolimit.gif" alt="figure">
                                         </div>
@@ -524,7 +233,7 @@
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <div class="benefit-box consulting-service5">
-                                        <h3 class="heading-title">Double the value</h3>
+                                        <h3 class="heading-title">3. Double the value</h3>
                                         <div class="item-img">
                                             <!-- <img src="img/figure/figure61.png" alt="figure"> -->
                                             <img class="logo-benefit" src="img/HibahAmanahTakaful/x2.gif" alt="figure">
@@ -536,66 +245,103 @@
                                     </div>
                                 </div>
                             </div>
-                            <h2 class="section-title">Why are these 3 things important?</h2>
-                            <!-- TEST -->
-                            <!-- <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="main-timeline">
-                                            <div class="timeline">
-                                                <a href="#" class="timeline-content">
-                                                    <span class="timeline-year">2018</span>
-                                                    <div class="timeline-icon">
-                                                        <i class="fa fa-rocket"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h3 class="title">Web Development</h3>
-                                                        <p class="description">
-                                                            1. How could you be able to benefit funds from the takaful policy in a situation where you are not able to take care of yourself? (Physical/Mental Disability)
-                                                        </p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="timeline">
-                                                <a href="#" class="timeline-content">
-                                                    <span class="timeline-year">2017</span>
-                                                    <div class="timeline-icon">
-                                                        <i class="fa fa-users"></i>
-                                                    </div>
-                                                    <div class="content">
-                                                        <h3 class="title">Java Script</h3>
-                                                        <p class="description">
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolor in, maiores natus.
-                                                        </p>
-                                                    </div>
-                                                </a>
-                                            </div>
+                            <h2 class="section-title pt-5">Why are these 3 things important?</h2>
+                            <div class="chart-wrap">
+                                <div class="col-lg-12">
+                                    <div class="mid-lineBox">
+                                        <div class="org-center">
+                                            <p></p>
+                                        </div>
+                                        <div class="org-spliter"></div>
+                                    </div>
+                                </div>
+                                <div cl <div class="col-lg-12">
+                                    <div class="org-top1">
+                                        <p class="policy-text">If you own a takaful policy worth</p>
+                                        <p class="million">RM1 Million<br/></p>
+                                    </div>
+                                    <div class="org-spliter"></div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mid-lineBox">
+                                        <div class="org-top">
+                                            <p class="no-flowchart1">1</p>
+                                            <p class="n-text">How would you able to benefit funds from the takaful policy in a situation where you a re not able to take care of yourself (Physical/Mental Disability)<br/></p>
+                                        </div>
+                                        <div class="org-spliter"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mid-lineBox">
+                                        <div class="org-top">
+                                            <p class="no-flowchart">2</p>
+                                            <p class="n-text">Who will be managing the funds for your welfare<br/></p>
+                                        </div>
+                                        <div class="org-spliter"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mid-lineBox">
+                                        <div class="org-top">
+                                            <p class="no-flowchart">3</p>
+                                            <p class="n-text">Will the individual be responsible to allocate RM1 million for your welfare?<br/></p>
+                                        </div>
+                                        <div class="org-spliter"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mid-lineBox">
+                                        <div class="org-top">
+                                            <p class="no-flowchart1">4</p>
+                                            <p class="n-text">Should the nominee be your child who is still a minor, how would the funds be distributed to take care of you and your child welfare?<br/></p>
+                                        </div>
+                                        <div class="org-spliter"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mid-lineBox">
+                                        <div class="org-center">
+                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
-                            </div> -->
-                            <!-- TEST -->
+                            </div>
+                            <!-- TEST 2 End -->
+                            <h2 class="section-title">What are some ways to design your takaful policy effectively?</h2><br>
+                            <p>We are here to help you plan by implementing</p>
+                            <p class="outline-box">Hibah Takaful Policy + Amanah Takaful = Hibah Amanah Takaful</p>
+                            <div class="point-benefit">
+                                <h3 class="no-outline1">#1</h3>
+                                <p class="outline-text">You are looking for a corresponding takaful policy that fits your asset and liability. We will assist to calculate and analyse the ideal takaful amount.
+                                </p>
+                            </div>
+                            <div class="point-benefit">
+                                <h3 class="no-outline">#2</h3>
+                                <p class="outline-text1">You will be able to set when and how will the fund from your takaful policy be managed for your own use or beneficiary through a Bond of Trust Letter that will be made while still living/healthy.
+                                </p>
+                            </div>
+                            <div class="point-benefit">
+                                <h3 class="no-outline">#3</h3>
+                                <p class="outline-text">You will be able to invest a portion of the fund policy to double the value to ensure long-term assistance.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="widget widget-details">
                             <div class="item-title">Hibah Amanah Takaful</div>
-                            <ul class="project-list" style="text-align: center;">
-                                <li><a class="btn" style="color: white; background-color: red; min-width: 67%;">Download Brochure </a></li>
-                                <li><a class="btn" style="color: white; background-color: red; min-width: 67%;">FAQ </a></li>
-                                <li><a class="btn" style="color: white; background-color: red; min-width: 67%;">Request Call Back </a></li>
+                            <ul class="project-list">
+                                <li><a class="btn-service">Download Brochure </a></li>
+                                <li><a class="btn-service">FAQ </a></li>
+                                <li><a class="btn-service-call">Request Call Back </a></li>
                             </ul>
                         </div>
-                        <div class="widget widget-brochures-box">
-                            <div class="widget-heading">
-                                <h3 class="item-subtitle">Find the best plan</h3>
+                        <div class="widget-banner ">
+                            <div class="widget-heading ">
+                                <h3 class="item-subtitle ">Find the best plan</h3>
                             </div>
                             <div class="brochures-list">
-                                <img src="img/HibahAmanahTakaful/poster.jpg" alt="logo" class="img-fluid">
-                                <!-- <ul>
-                                    <li><a href="#"><i class="fas fa-download"></i>Download Brochure</a></li>
-                                    <li><a href="#"><i class="far fa-file-pdf"></i>Price Chart</a></li>
-                                </ul> -->
+                                <img src="img/HibahAmanahTakaful/poster.jpg " alt="logo " class="img-fluid ">
                             </div>
                         </div>
                     </div>
@@ -605,107 +351,107 @@
         <!--=====================================-->
         <!--=            Consulting Start       =-->
         <!--=====================================-->
-        <section class="consulting-service-wrap1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="consulting-service1">
-                            <h2 class="section-title">benefits</h2>
+        <section class="consulting-service-wrap1 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-5 ">
+                        <div class="consulting-service1 ">
+                            <h2 class="section-title ">benefits</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg">
-                            <div class="media">
-                                <!-- <div class="item-img">
-                                    <img src="img/figure/figure18.png" alt="figure">
-                                    <div class="service-img">
-                                        <img src="img/figure/figure46.png" alt="service">
+                <div class="row ">
+                    <div class="col-lg-4 ">
+                        <div class="consulting-service3 " data-bg-image="img/service/service1.jpg ">
+                            <div class="media ">
+                                <!-- <div class="item-img ">
+                                    <img src="img/figure/figure18.png " alt="figure ">
+                                    <div class="service-img ">
+                                        <img src="img/figure/figure46.png " alt="service ">
                                     </div>
                                 </div> -->
-                                <div class="media-body">
-                                    <h3 class="title-heading"><a href="#">Flexible coverage period</a></h3>
+                                <div class="media-body ">
+                                    <h3 class="title-heading "><a href="# ">Flexible coverage period</a></h3>
                                     <p>Choose your coverage period starting from 5 years or until you reach the age of 99 next birth.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg">
-                            <div class="media">
-                                <!-- <div class="item-img">
-                                    <img src="img/figure/figure21.png" alt="figure">
-                                    <div class="service-img service-img2">
-                                        <img src="img/figure/figure47.png" alt="service">
+                    <div class="col-lg-4 ">
+                        <div class="consulting-service3 " data-bg-image="img/service/service1.jpg ">
+                            <div class="media ">
+                                <!-- <div class="item-img ">
+                                    <img src="img/figure/figure21.png " alt="figure ">
+                                    <div class="service-img service-img2 ">
+                                        <img src="img/figure/figure47.png " alt="service ">
                                     </div>
                                 </div> -->
-                                <div class="media-body">
-                                    <h3 class="title-heading"><a href="#">Contribution payment period</a></h3>
+                                <div class="media-body ">
+                                    <h3 class="title-heading "><a href="# ">Contribution payment period</a></h3>
                                     <p>Choose between 5, 10 or 20 years or the entire coverage period.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg">
-                            <div class="media">
-                                <!-- <div class="item-img">
-                                    <img src="img/figure/figure18.png" alt="figure">
-                                    <div class="service-img service-img3">
-                                        <img src="img/figure/figure46.png" alt="service">
+                    <div class="col-lg-4 ">
+                        <div class="consulting-service3 " data-bg-image="img/service/service1.jpg ">
+                            <div class="media ">
+                                <!-- <div class="item-img ">
+                                    <img src="img/figure/figure18.png " alt="figure ">
+                                    <div class="service-img service-img3 ">
+                                        <img src="img/figure/figure46.png " alt="service ">
                                     </div>
                                 </div> -->
-                                <div class="media-body">
-                                    <h3 class="title-heading"><a href="#">Grant your Takaful benefits</a></h3>
+                                <div class="media-body ">
+                                    <h3 class="title-heading "><a href="# ">Grant your Takaful benefits</a></h3>
                                     <p>Make arrangements for beneficiaries and/or charitable organizations of your choice.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg">
-                            <div class="media">
-                                <!-- <div class="item-img">
-                                    <img src="img/figure/figure20.png" alt="figure">
-                                    <div class="service-img service-img4">
-                                        <img src="img/figure/figure49.png" alt="service">
+                    <div class="col-lg-4 ">
+                        <div class="consulting-service3 " data-bg-image="img/service/service1.jpg ">
+                            <div class="media ">
+                                <!-- <div class="item-img ">
+                                    <img src="img/figure/figure20.png " alt="figure ">
+                                    <div class="service-img service-img4 ">
+                                        <img src="img/figure/figure49.png " alt="service ">
                                     </div>
                                 </div> -->
-                                <div class="media-body">
-                                    <h3 class="title-heading"><a href="#">Accidental Death Benefit</a></h3>
+                                <div class="media-body ">
+                                    <h3 class="title-heading "><a href="# ">Accidental Death Benefit</a></h3>
                                     <p>Your heirs will receive up to 300% of the Basic Sum Covered in the event of death due to an accident.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg">
-                            <div class="media">
-                                <!-- <div class="item-img">
-                                    <img src="img/figure/figure20.png" alt="figure">
-                                    <div class="service-img service-img4">
-                                        <img src="img/figure/figure49.png" alt="service">
+                    <div class="col-lg-4 ">
+                        <div class="consulting-service3 " data-bg-image="img/service/service1.jpg ">
+                            <div class="media ">
+                                <!-- <div class="item-img ">
+                                    <img src="img/figure/figure20.png " alt="figure ">
+                                    <div class="service-img service-img4 ">
+                                        <img src="img/figure/figure49.png " alt="service ">
                                     </div>
                                 </div> -->
-                                <div class="media-body">
-                                    <h3 class="title-heading"><a href="#">Benefits of Ihsan</a></h3>
+                                <div class="media-body ">
+                                    <h3 class="title-heading "><a href="# ">Benefits of Ihsan</a></h3>
                                     <p>Your heirs will receive a sum of RM2,000 from the Tabarru 'Fund in the event of your death.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg">
-                            <div class="media">
-                                <!-- <div class="item-img">
-                                    <img src="img/figure/figure20.png" alt="figure">
-                                    <div class="service-img service-img4">
-                                        <img src="img/figure/figure49.png" alt="service">
+                    <div class="col-lg-4 ">
+                        <div class="consulting-service3 " data-bg-image="img/service/service1.jpg ">
+                            <div class="media ">
+                                <!-- <div class="item-img ">
+                                    <img src="img/figure/figure20.png " alt="figure ">
+                                    <div class="service-img service-img4 ">
+                                        <img src="img/figure/figure49.png " alt="service ">
                                     </div>
                                 </div> -->
-                                <div class="media-body">
-                                    <h3 class="title-heading"><a href="#">Increase your protection</a></h3>
+                                <div class="media-body ">
+                                    <h3 class="title-heading "><a href="# ">Increase your protection</a></h3>
                                     <p>You want to add coverage for Critical Illness or medical.</p>
                                 </div>
                             </div>
@@ -717,22 +463,22 @@
         <!--=====================================-->
         <!--=            Banner Start           =-->
         <!--=====================================-->
-        <section class="banner-wrap2">
-            <div class="container">
-                <div class="background-image1">
-                    <img src="img/figure/figure69.png" alt="banner">
+        <section class="banner-wrap2 ">
+            <div class="container ">
+                <div class="background-image1 ">
+                    <img src="img/figure/figure69.png " alt="banner ">
                 </div>
-                <div class="background-image2">
-                    <img src="img/figure/figure70.png" alt="banner">
+                <div class="background-image2 ">
+                    <img src="img/figure/figure70.png " alt="banner ">
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="banner-box2">
-                            <div class="media">
-                                <h2 class="section-title">Need Any Business Consulting Facilities? Contact With Us </h2>
-                                <div class="media-body">
-                                    <div class="item-button">
-                                        <a href="about.html" class="item-btn">Request a Call Back<i class="fas fa-long-arrow-alt-right"></i></a>
+                <div class="row ">
+                    <div class="col-lg-12 ">
+                        <div class="banner-box2 ">
+                            <div class="media ">
+                                <h2 class="section-title ">Need Any Business Consulting Facilities? Contact With Us </h2>
+                                <div class="media-body ">
+                                    <div class="item-button ">
+                                        <a href="about.html " class="item-btn ">Request a Call Back<i class="fas fa-long-arrow-alt-right "></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -744,10 +490,10 @@
         <!--=====================================-->
         <!--=      Footer Start                 =-->
         <!--=====================================-->
-        <div style="height: 150px;"></div>
-        <footer class="footer-area2">
-            <div class="background-shape68">
-                <img class="req-call" src="img/figure/figure68.png " alt="figure ">
+        <div style="height: 150px; "></div>
+        <footer class="footer-area2 ">
+            <div class="background-shape68 ">
+                <img class="req-call " src="img/figure/figure68.png " alt="figure ">
             </div>
             <div class="background-footer ">
                 <div class="container ">
@@ -755,7 +501,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-6 ">
                             <div class="footer-left ">
                                 <div class="footer-logo ">
-                                    <a href="# "><img src="img/logo/awanlogoblack.png" alt="logo "></a>
+                                    <a href="# "><img src="img/logo/awanlogoblack.png " alt="logo "></a>
                                 </div>
                                 <p>Awan Advisory was established by a group of professional and expert in financial services, life planning and wealth management industry. </p>
                                 <div class="footer-social ">
@@ -777,17 +523,17 @@
                                 <div class="row ">
                                     <div class="col-xl-6 ">
                                         <ul class="footer-list ">
-                                            <li><a href="takafulCalculator.html"><i class="fas fa-angle-right "></i>Takaful Calculator</a></li>
-                                            <li><a href="hibahamanahtakaful.html"><i class="fas fa-angle-right "></i>Amanah Takaful</a></li>
-                                            <li><a href="medicalprotection.html"><i class="fas fa-angle-right "></i>Medical Protection</a></li>
-                                            <li><a href="investment.html"><i class="fas fa-angle-right "></i>Investment</a></li>
+                                            <li><a href="takafulCalculator.html "><i class="fas fa-angle-right "></i>Takaful Calculator</a></li>
+                                            <li><a href="hibahamanahtakaful.html "><i class="fas fa-angle-right "></i>Amanah Takaful</a></li>
+                                            <li><a href="medicalprotection.html "><i class="fas fa-angle-right "></i>Medical Protection</a></li>
+                                            <li><a href="investment.html "><i class="fas fa-angle-right "></i>Investment</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-xl-6 ">
                                         <ul class="footer-list2 ">
-                                            <li><a href="about.html"><i class="fas fa-angle-right "></i>About Us</a></li>
-                                            <li><a href="blog.html"><i class="fas fa-angle-right "></i> Blog</a></li>
-                                            <li><a href="contact.html"><i class="fas fa-angle-right "></i>Contact Us</a></li>
+                                            <li><a href="about.html "><i class="fas fa-angle-right "></i>About Us</a></li>
+                                            <li><a href="blog.html "><i class="fas fa-angle-right "></i> Blog</a></li>
+                                            <li><a href="contact.html "><i class="fas fa-angle-right "></i>Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -826,61 +572,61 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="consulation-box1">
-                            <button data-dismiss="modal" class="btn quote-close">x</button>
-                            <h2 class="section-title">Request a Takaful Advisor Quotation?</h2>
+            <div class="modal fade " id="myModal " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
+                <div class="modal-dialog modal-dialog-centered " role="document ">
+                    <div class="modal-content ">
+                        <div class="consulation-box1 ">
+                            <button data-dismiss="modal " class="btn quote-close ">x</button>
+                            <h2 class="section-title ">Request a Takaful Advisor Quotation?</h2>
                             <p>Thank you for your request. Just fill up the following details and we'll be in touch soon.</p>
-                            <form class="message-box">
-                                <div class="row">
-                                    <div class="form-group col-lg-12">
-                                        <label for="sel1">Product Name</label>
-                                        <select class="form-control" id="sel1" style="height: 51px;">
+                            <form class="message-box ">
+                                <div class="row ">
+                                    <div class="form-group col-lg-12 ">
+                                        <label for="sel1 ">Product Name</label>
+                                        <select class="form-control " id="sel1 " style="height: 51px; ">
                                               <option>Product 1</option>
                                               <option>Product 2</option>
                                             </select>
                                     </div>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" class="form-control">
+                                    <div class="form-group col-lg-12 ">
+                                        <input type="text " class="form-control ">
                                         <label>Full Name</label>
                                     </div>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" class="form-control">
+                                    <div class="form-group col-lg-12 ">
+                                        <input type="text " class="form-control ">
                                         <label>Mobile Number</label>
                                     </div>
-                                    <div class="form-group col-lg-12">
-                                        <input type="text" class="form-control">
+                                    <div class="form-group col-lg-12 ">
+                                        <input type="text " class="form-control ">
                                         <label>Email Address</label>
                                     </div>
-                                    <div class="form-group col-lg-12">
-                                        <label for="sel1">State</label>
-                                        <select class="form-control" id="sel1" style="height: 51px;">
+                                    <div class="form-group col-lg-12 ">
+                                        <label for="sel1 ">State</label>
+                                        <select class="form-control " id="sel1 " style="height: 51px; ">
                                               <option>Kuala Lumpur</option>
                                               <option>Johor</option>
                                             </select>
                                     </div>
-                                    <div class="form-group col-lg-12">
-                                        <label for="sel1">State</label>
-                                        <select class="form-control" id="sel1" style="height: 51px;">
+                                    <div class="form-group col-lg-12 ">
+                                        <label for="sel1 ">State</label>
+                                        <select class="form-control " id="sel1 " style="height: 51px; ">
                                               <option>Muar</option>
                                               <option>Segamat</option>
                                             </select>
                                     </div>
-                                    <div class="form-group col-lg-12">
-                                        <textarea name="message" id="message" class="form-control" placeholder="Your Message" cols="30" rows="6" data-error="Message Name is required" required></textarea>
+                                    <div class="form-group col-lg-12 ">
+                                        <textarea name="message " id="message " class="form-control " placeholder="Your Message " cols="30 " rows="6 " data-error="Message Name is required " required></textarea>
                                         <label>Messages</label>
                                     </div>
-                                    <div class="form-group col-lg-12">
-                                        <a href="#" class="item-btn">Send Request</a>
+                                    <div class="form-group col-lg-12 ">
+                                        <a href="# " class="item-btn ">Send Request</a>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <!-- <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        <!-- <div class="modal-footer ">
+                            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                            <button type="button " class="btn btn-primary ">Save changes</button>
                         </div> -->
                     </div>
                 </div>
@@ -888,25 +634,25 @@
         </footer>
     </div>
     <!-- Jquery Js Start Here -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js "></script>
     <!-- Bootstrap Js Start Here -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
     <!-- Wow Js Start Here -->
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js "></script>
     <!-- Owl Carousel Js Start Here -->
-    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js "></script>
     <!-- Slick Js Start Here -->
-    <script src="js/slick.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js "></script>
+    <script src="js/slick.min.js "></script>
     <!-- Nivo Js Start Here -->
-    <script src="vendor/nivo-slider/jquery.nivo.slider.js"></script>
-    <script src="vendor/nivo-slider/home.js"></script>
+    <script src="vendor/nivo-slider/jquery.nivo.slider.js "></script>
+    <script src="vendor/nivo-slider/home.js "></script>
     <!-- Meanmenu Js Start Here -->
-    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js "></script>
     <!-- Circle Js Start Here -->
-    <script src="js/circle-progress.min.js"></script>
+    <script src="js/circle-progress.min.js "></script>
     <!-- Main Js Start Here -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>

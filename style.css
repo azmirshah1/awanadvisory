@@ -4587,8 +4587,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .widget-details {
     transform: translateY(-108px);
-    /* padding-left: 50px; */
-    padding-left: 0px;
+    padding-left: 50px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -4611,6 +4610,7 @@ div#wrapper.open>.offcanvas-mask {
     background-color: #f6f6f6;
     padding: 10px 30px 10px 30px;
     border-radius: 0px 0px 4px 4px;
+    text-align: center;
 }
 
 .widget-details .project-list li {
@@ -12185,6 +12185,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .single-portfolio-box1 {
     background-color: #fff;
+    margin-top: -80px;
 }
 
 .single-portfolio-box2 .section-subtitle {
@@ -15489,4 +15490,245 @@ div#wrapper.open>.offcanvas-mask {
     .profile-calculator {
         margin-bottom: -110px;
     }
+}
+
+
+/*------------------- 5.27 Hibah Amanah Takaful -------------------*/
+
+.widget-banner {
+    padding-left: 14%;
+    margin-top: -20%;
+}
+
+.widget-details .project-list .btn-service {
+    color: #FA360A;
+    font-weight: 600;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* padding: 0px 30px 0px; */
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.widget-details .project-list .btn-service:hover {
+    color: white;
+    background-color: #FA360A;
+}
+
+.widget-details .project-list .btn-service-call {
+    color: white;
+    font-weight: 600;
+    background-color: #FA360A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* padding: 0px 30px 0px; */
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.widget-details .project-list .btn-service-call:hover {
+    color: white;
+    background-color: black;
+}
+
+.chart-wrap {
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.org-center {
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    background: #FA360A;
+    border-radius: 20px;
+    overflow: hidden;
+    border: #FA360A solid 2px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.org-top {
+    width: 100%;
+    margin: 0 auto;
+    background: #fafafa;
+    color: black;
+    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: #FA360A solid 1px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+}
+
+.org-top:hover {
+    background-color: antiquewhite;
+    border: none;
+    border-bottom: 4px solid orangered;
+}
+
+.org-top1 {
+    width: 100%;
+    margin: 0 auto;
+    background: red;
+    color: white;
+    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: #FA360A solid 1px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.org-spliter {
+    width: 2px;
+    height: 130px;
+    background: #FA360A;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+
+.million {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.policy-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 500 !important;
+    font-weight: normal;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.n-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 500 !important;
+    font-weight: normal;
+    width: 100%;
+    float: left;
+    text-align: left;
+    float: right;
+    display: inline;
+    width: 90%;
+    padding: 0 10px 0 0;
+}
+
+.no-flowchart {
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    text-align: center;
+    /* float: left; */
+    display: inline;
+    width: 5%;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+    left: 10px;
+}
+
+.no-flowchart1 {
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    text-align: center;
+    /* float: left; */
+    display: inline;
+    width: 5%;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+.outline-box {
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.no-outline {
+    font-weight: bold;
+    color: #FA360A;
+    text-align: center;
+    display: inline;
+    min-width: 120px;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+    border: 1px solid #FA360A;
+}
+
+.no-outline1 {
+    font-weight: bold;
+    color: #FA360A;
+    text-align: center;
+    display: inline;
+    min-width: 120px;
+    padding: 10px 20px 10px 15px;
+    position: relative;
+    border: 1px solid #FA360A;
+}
+
+.outline-text {
+    font-weight: 500 !important;
+    font-weight: normal;
+    width: 100%;
+    float: left;
+    text-align: left;
+    float: right;
+    display: inline;
+    width: 90%;
+    padding: 0 10px 0 0;
+    position: relative;
+    left: 20px;
+    top: -15px;
+}
+
+.outline-text1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500 !important;
+    font-weight: normal;
+    width: 100%;
+    float: left;
+    text-align: left;
+    float: right;
+    display: inline;
+    width: 90%;
+    padding: 0 10px 0 0;
+    position: relative;
+    left: 20px;
+    top: -25px;
+}
+
+.point-benefit {
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.point-benefit:hover {
+    color: #FA360A;
 }
