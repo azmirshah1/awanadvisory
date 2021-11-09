@@ -15537,7 +15537,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .chart-wrap {
-    width: 700px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     padding-top: 10px;
@@ -15731,4 +15731,28 @@ div#wrapper.open>.offcanvas-mask {
 
 .point-benefit:hover {
     color: #FA360A;
+}
+
+.btn-suscribe {
+    background-color: #fa360a;
+    color: white !important;
+    border-radius: 20px;
+    padding: 8px 25px 8px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-suscribe:hover {
+    background-color: white;
+    color: #fa360a !important;
+    border: 1px solid #fa360a;
+    font-weight: bold;
+}
+
+.mt-01 {
+    margin-top: -20px;
+}
+
+.mt-02 {
+    margin-top: -30px;
 }
