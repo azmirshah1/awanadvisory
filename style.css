@@ -9294,7 +9294,9 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .consulting-service-wrap3 {
-    padding: 100px 0px 220px 0px;
+    /* padding: 100px 0px 220px 0px; */
+    padding: 100px 0px 80px 0px;
+    margin-top: -80px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -9446,7 +9448,7 @@ div#wrapper.open>.offcanvas-mask {
     color: #aeaeae;
     font-weight: 500;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
