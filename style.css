@@ -51,6 +51,8 @@ CSS INDEX
     5.24 Testimonial
     5.25 Why-choose
     5.26 Calculator
+    5.27 Hibah Amanah Takaful
+    5.28 Investment
     
 /*=======================================================================
 /*=======================================================================
@@ -9866,7 +9868,8 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .single-service-wrap2 {
-    padding: 110px 0px 120px 0px;
+    /* padding: 110px 0px 120px 0px; */
+    padding: 30px 0px 120px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -15755,4 +15758,82 @@ div#wrapper.open>.offcanvas-mask {
 
 .mt-02 {
     margin-top: -30px;
+}
+
+.page-quote {
+    background-color: #f7f7f7;
+    padding: 25px 40px 12px 45px;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 35px;
+    /* margin-left: 40px; */
+}
+
+@media only screen and (max-width: 1199px) {
+    .page-quote {
+        margin-left: 0px;
+    }
+}
+
+.page-quote:after {
+    content: "";
+    height: 85px;
+    width: 3px;
+    background-color: #fa360a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.page-quote .item-quote2 {
+    color: #444;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 28px;
+}
+
+@media only screen and (max-width: 767px) {
+    .page-quote .item-quote2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .page-quote .item-quote2 {
+        font-size: 15px;
+    }
+}
+
+.page-quote .quotetion-icon2 {
+    font-size: 72px;
+    color: #e5e5e5;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 479px) {
+    .page-quote .quotetion-icon2 {
+        font-size: 50px;
+    }
+}
+
+
+/*------------------- 5.28 Investment -------------------*/
+
+.jpg-discuss {
+    height: 480px;
+    width: auto;
+    object-fit: cover;
+}
+
+.disclaimer-investment {
+    font-size: 12px;
 }
