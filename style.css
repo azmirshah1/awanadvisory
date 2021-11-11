@@ -930,11 +930,12 @@ h6 {
     transition: all 0.3s ease-out;
 }
 
-@media .about-box3 .about-box8 p {
+
+/* @media only screen and (max-width: 1199px) {
     .slider-area .nivo-directionNav a.nivo-nextNav:before {
         font-size: 20px;
     }
-}
+} */
 
 @media only screen and (max-width: 1199px) {
     .slider-area .nivo-directionNav a.nivo-nextNav {
@@ -1101,12 +1102,6 @@ h6 {
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .slider-area .slider-content .item-btn {
-        /* display: none; */
-    }
-}
-
 .slider-area .slider-content .item-btn li {
     display: inline-block;
     margin-right: 10px;
@@ -1156,12 +1151,6 @@ h6 {
     transition: all 0.3s ease-in-out;
     position: relative;
     z-index: 5;
-}
-
-@media only screen and (max-width: 991px) {
-    .slider-area .slider-content .item-btn li a {
-        /* display: none; */
-    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -1557,12 +1546,6 @@ h6 {
 @media only screen and (max-width: 479px) {
     .slider-area2 .slider-content .item-paragraph {
         display: none;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .slider-area .slider-content .item-btn {
-        /* display: none; */
     }
 }
 
@@ -3888,7 +3871,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .mean-container .mean-bar .mobile-menu-nav-back {
     padding-left: 15px;
-    border-bottom: 1px solid #b2b2b2;
+    border-bottom: 1px solid black;
     position: relative;
     text-align: center;
     height: 50px;
@@ -3975,6 +3958,7 @@ div#wrapper.open>.offcanvas-mask {
     top: 0;
     transition: unset;
     padding: 16px 14px 12px;
+    color: white;
 }
 
 .mean-container #wrapper {
@@ -5348,6 +5332,12 @@ div#wrapper.open>.offcanvas-mask {
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 991px) {
+    .about-box1 .section-subtitle {
+        text-align: center;
+    }
+}
+
 .about-box8 .section-subtitle {
     color: #FA360A;
     font-size: 18px;
@@ -5417,17 +5407,11 @@ div#wrapper.open>.offcanvas-mask {
     }
 }
 
-.about-box1 p {
-    margin-bottom: 28px;
-}
-
 @media only screen and (max-width: 991px) {
     .about-box1 p {
-        /* display: -webkit-box; */
         display: block;
         -webkit-line-clamp: 3;
-        /* -webkit-box-orient: vertical;
-        overflow: hidden; */
+        text-align: justify;
     }
 }
 
@@ -5661,7 +5645,7 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 575px) {
     .about-box3 .about-box8 {
         text-align: center;
-        padding-bottom: 30px;
+        margin-bottom: -70px;
     }
 }
 
@@ -5686,20 +5670,18 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 991px) {
     .about-box3 .about-box8 .heading-title {
         margin-bottom: 10px;
+        text-align: center;
     }
 }
 
 @media only screen and (max-width: 479px) {
     .about-box3 .about-box8 .heading-title {
-        font-size: 36px;
-        line-height: 38px;
-        font-weight: bold;
-        text-align: left;
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 
 .about-box3 .about-box8 p {
-    /* margin-bottom: 30px; */
     color: #646464;
     padding-right: 60px;
 }
@@ -5707,9 +5689,7 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 1199px) {
     .about-box3 .about-box8 p {
         display: -webkit-box;
-        /* -webkit-line-clamp: 4; */
         -webkit-box-orient: vertical;
-        /* overflow: hidden; */
         padding-right: 0px;
     }
 }
@@ -5717,6 +5697,11 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 991px) {
     .about-box3 .about-box8 p {
         margin-bottom: 0px;
+        text-align: justify;
+    }
+    .about-box3 .about-box8 p.product-title {
+        text-align: center;
+        margin-top: -30px;
     }
 }
 
@@ -10884,6 +10869,7 @@ div#wrapper.open>.offcanvas-mask {
         -webkit-line-clamp: 0;
         -webkit-box-orient: vertical;
         overflow: inherit;
+        text-align: justify;
     }
 }
 
@@ -12816,7 +12802,7 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 767px) {
     .progress-bar-box1 {
         padding-left: calc((100% - 510px) / 2);
-        padding-bottom: 50px;
+        padding-bottom: 10px;
         padding-top: 35px;
     }
 }
@@ -12825,7 +12811,6 @@ div#wrapper.open>.offcanvas-mask {
     .progress-bar-box1 {
         padding-left: 15px;
         padding-right: 15px;
-        /* padding-bottom: 250px; */
     }
     .advisor-reverse {
         flex-direction: column-reverse;
@@ -12870,7 +12855,7 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 991px) {
     .progress-bar-box1 p {
-        text-align: center;
+        text-align: justify;
     }
 }
 
