@@ -2384,13 +2384,19 @@ h6 {
 }
 
 .background-footer .footer-left .footer-logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 300px;
 }
 
 @media only screen and (max-width: 1199px) {
     .background-footer .footer-left .footer-logo {
         margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .background-footer .footer-left .footer-logo {
+        margin-top: -10px;
     }
 }
 
@@ -4037,11 +4043,12 @@ div#wrapper.open>.offcanvas-mask {
     color: #fa360a;
 }
 
-@media only screen and (max-width: 1199px) {
+
+/* @media only screen and (max-width: 1199px) {
     .pagination-layout .prev-btn .media .media-body .item-title {
         display: none;
     }
-}
+} */
 
 .pagination-layout .prev-btn .media .media-body a {
     color: #929292;
@@ -4055,6 +4062,12 @@ div#wrapper.open>.offcanvas-mask {
 
 .pagination-layout .next-btn {
     padding-right: 30px;
+}
+
+@media only screen and (max-width: 479px) {
+    .pagination-layout .next-btn {
+        padding-right: 0px;
+    }
 }
 
 .pagination-layout .next-btn .media {
@@ -4078,11 +4091,12 @@ div#wrapper.open>.offcanvas-mask {
     color: #fa360a;
 }
 
-@media only screen and (max-width: 1199px) {
+
+/* @media only screen and (max-width: 1199px) {
     .pagination-layout .next-btn .media .media-body .item-title {
         display: none;
     }
-}
+} */
 
 .pagination-layout .next-btn .media .media-body a {
     color: #929292;
@@ -5921,6 +5935,7 @@ div#wrapper.open>.offcanvas-mask {
     background-color: #fa360a;
     display: flex;
     position: relative;
+    margin: -50px 0px -20px;
 }
 
 .banner-box1:after {
@@ -5963,9 +5978,14 @@ div#wrapper.open>.offcanvas-mask {
 
 .banner-box1 .item-img img {
     clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 102%);
+    margin-left: -1px;
 }
 
 @media only screen and (max-width: 991px) {
+    .banner-box1 {
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
     .banner-box1 .item-img img {
         display: none;
     }
@@ -6610,6 +6630,10 @@ div#wrapper.open>.offcanvas-mask {
 
 
 /*------------------- 5.4 Blog -------------------*/
+
+.blog-title {
+    font-weight: 700;
+}
 
 .blog-wrap-layout1 {
     background-color: #fff;
@@ -10281,11 +10305,13 @@ div#wrapper.open>.offcanvas-mask {
     border-radius: 4px;
     padding: 45px 40px 35px 40px;
     position: relative;
+    margin-top: -60px;
 }
 
 @media only screen and (max-width: 991px) {
     .contact-box1 {
         margin-bottom: 50px;
+        margin-top: 0px;
     }
 }
 
