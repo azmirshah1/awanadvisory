@@ -9588,6 +9588,13 @@ div#wrapper.open>.offcanvas-mask {
     .benefit-box .heading-title {
         font-size: 22px;
     }
+    .benefit-box .heading-title:before {
+        top: 80px;
+    }
+    .benefit-box .heading-title:after {
+        top: 80px;
+        left: 47%;
+    }
 }
 
 .benefit-box .logo-benefit {
@@ -12278,12 +12285,27 @@ div#wrapper.open>.offcanvas-mask {
     color: #000;
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 @media only screen and (max-width: 1199px) {
     .single-portfolio-box2 .section-title {
         font-size: 30px;
+    }
+    .single-portfolio-box1 {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-portfolio-box2 .section-subtitle {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+    .single-portfolio-box2 .section-title {
+        text-align: center;
     }
 }
 
@@ -12341,8 +12363,8 @@ div#wrapper.open>.offcanvas-mask {
 .single-portfolio-box2 .portfolio-list li {
     color: #000;
     margin-bottom: 6px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    /* font-weight: 500; */
 }
 
 .single-portfolio-box2 .portfolio-list li:last-child {
@@ -15716,6 +15738,36 @@ div#wrapper.open>.offcanvas-mask {
     right: 50%;
 }
 
+@media only screen and (max-width: 1199px) {
+    .org-spliter {
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .org-spliter {
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .org-spliter {
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .org-spliter {
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .org-spliter {
+        height: 230px;
+    }
+}
+
 .million {
     text-align: center;
     font-size: 30px;
@@ -15775,6 +15827,32 @@ div#wrapper.open>.offcanvas-mask {
     position: relative;
     top: 15px;
     left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .no-flowchart {
+        left: 42%;
+        top: -7px;
+    }
+    .no-flowchart1 {
+        left: 42%;
+        top: -7px;
+    }
+    .n-text {
+        padding: 0 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .outline-text {
+        padding: 0 35px 0 30px !important;
+        top: -56px !important;
+        margin-bottom: -20px;
+    }
+    .outline-text1 {
+        padding: 0 35px 0 30px !important;
+        top: -56px !important;
+        margin-bottom: -20px !important;
+    }
 }
 
 .outline-box {
@@ -15869,6 +15947,14 @@ div#wrapper.open>.offcanvas-mask {
 
 .mt-02 {
     margin-top: -30px;
+}
+
+.mb-01 {
+    margin-bottom: -20px;
+}
+
+.mb-02 {
+    margin-bottom: -30px;
 }
 
 .page-quote {
