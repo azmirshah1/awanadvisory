@@ -79,7 +79,7 @@ body {
 }
 
 p {
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     text-align: justify;
 }
 
@@ -3317,7 +3317,7 @@ nav.template-main-menu>ul>li:hover .template-mega-menu {
         display: none;
     }
     .about-box3 .about-box8 p {
-        padding-top: 20px;
+        padding-top: 13px;
     }
 }
 
@@ -4012,7 +4012,7 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 767px) {
     .item-pagination {
-        text-align: left;
+        /* text-align: left; */
         margin-top: 0;
     }
 }
@@ -5526,7 +5526,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .about-finnaco-wrap2 {
-    padding: 80px 0px 10px 0px;
+    padding: 60px 0px 10px 0px;
     position: relative;
 }
 
@@ -5791,7 +5791,7 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 1199px) {
     .about-box3 .about-box8 .item-paragraph {
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -6650,7 +6650,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .banner-wrap7 {
-    padding: 0px 0px 110px 0px;
+    padding: 0px 0px 80px 0px;
 }
 
 @media only screen and (max-width: 1439px) {
@@ -6662,8 +6662,23 @@ div#wrapper.open>.offcanvas-mask {
 
 /*------------------- 5.4 Blog -------------------*/
 
+.blog-content .heading-title {
+    color: #fa360a;
+    font-weight: 700;
+}
+
 .blog-title {
     font-weight: 700;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+    .blog-title {
+        text-align: center;
+    }
+    .blog-content {
+        margin-bottom: -30px;
+    }
 }
 
 .blog-wrap-layout1 {
@@ -7024,7 +7039,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .blog-wrap-layout3 {
     background-color: #fff;
-    padding: 120px 0px 105px 0px;
+    padding: 50px 0px 50px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -7327,7 +7342,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .single-blog-wrap1 {
-    padding: 120px 0px 130px 0px;
+    padding: 50px 0px 50px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -15327,6 +15342,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .choose-us-box1 .accordion .card .card-body p {
     color: #fff;
+    padding-right: 20px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -15437,7 +15453,7 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 479px) {
     .consulation-box1 p {
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -15523,8 +15539,12 @@ div#wrapper.open>.offcanvas-mask {
 
 /*------------------- 5.26 Calculator Takaful -------------------*/
 
+.calculator-header {
+    font-weight: bold;
+}
+
 .disclaimer-calculator {
-    margin-top: -40px;
+    margin-top: -70px;
     margin-bottom: -30px;
     font-style: italic;
     font-size: 14px;
@@ -15534,13 +15554,16 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 767px) {
     .disclaimer-calculator {
         text-align: justify;
-        padding: 20px 15px;
+        padding: 40px 15px;
+    }
+    .calculator-header {
+        font-size: 24px;
+        text-align: center;
     }
 }
 
 .cal-header {
     margin-top: -60px;
-    margin-bottom: 20px;
     padding-left: 14px;
 }
 
@@ -15556,13 +15579,32 @@ div#wrapper.open>.offcanvas-mask {
     .cal-header p {
         text-align: justify;
     }
-}
-
-@media only screen and (max-width: 479px) {
-    .profile-calculator {
-        margin-bottom: -110px;
+    .about-box3 .about-box8 p.calculator-subtitle {
+        text-align: center;
+        margin-top: -20px;
+    }
+    .cal-header {
+        padding-bottom: 10px;
     }
 }
+
+.about-box3 .about-box8 p.calculator-subtitle {
+    color: #fa360a;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.profile-calculator {
+    padding-top: 30px;
+}
+
+
+/* @media only screen and (max-width: 479px) {
+    .profile-calculator {
+        margin-bottom: 0px;
+    }
+} */
 
 
 /*------------------- 5.27 Hibah Amanah Takaful -------------------*/
