@@ -9741,8 +9741,8 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .single-service-box1 {
-    margin-top: -70px;
-    margin-bottom: -50px;
+    /* margin-top: -70px; */
+    /* margin-bottom: -50px; */
 }
 
 .single-service-box1 .section-title {
@@ -9979,24 +9979,32 @@ div#wrapper.open>.offcanvas-mask {
     .single-service-box2 .section-title {
         font-size: 30px;
     }
+    .single-service-box2 {
+        margin-top: -20px;
+    }
 }
 
 @media only screen and (max-width: 479px) {
     .single-service-box2 .section-title {
         font-size: 24px;
         line-height: 30px;
+        text-align: center;
+        padding-bottom: 10px;
     }
 }
 
 .single-service-box2 .section-subtitle {
-    color: #444;
-    font-size: 20px;
+    color: #fa360a;
+    font-size: 16px;
     font-weight: 700;
+    margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 479px) {
     .single-service-box2 .section-subtitle {
         font-size: 18px;
+        text-align: center;
+        margin-top: -3px;
     }
 }
 
@@ -10042,6 +10050,7 @@ div#wrapper.open>.offcanvas-mask {
     font-weight: 500;
     display: block;
     margin-bottom: 7px;
+    text-align: justify;
 }
 
 .single-service-box2 .service-list li:last-child {
@@ -10078,7 +10087,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .single-service-box2 .about-single-layout {
-    padding: 40px 0px 60px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -10089,7 +10098,7 @@ div#wrapper.open>.offcanvas-mask {
 
 @media only screen and (max-width: 991px) {
     .single-service-box2 .about-single-layout {
-        padding: 40px 0px;
+        padding: 0px 0px;
     }
 }
 
@@ -10138,6 +10147,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .single-service-box2 .about-single-layout .about-box7 {
     margin-top: -10px;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -10149,6 +10159,8 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 991px) {
     .single-service-box2 .about-single-layout .about-box7 {
         margin-left: 0px;
+        padding: 20px;
+        margin-bottom: -30px;
     }
 }
 
@@ -10353,7 +10365,7 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 1199px) {
     .single-service-box2 .tab-area .tab-content p {
         display: -webkit-box;
-        -webkit-line-clamp: 4;
+        /* -webkit-line-clamp: 4; */
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
@@ -12303,7 +12315,7 @@ div#wrapper.open>.offcanvas-mask {
     color: #fa360a;
     font-size: 16px;
     margin-bottom: 0;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .single-portfolio-box2 .section-title {
@@ -12327,7 +12339,7 @@ div#wrapper.open>.offcanvas-mask {
         text-align: center;
         font-size: 18px;
         font-weight: 700;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
     .single-portfolio-box2 .section-title {
         text-align: center;
@@ -16067,8 +16079,37 @@ div#wrapper.open>.offcanvas-mask {
     font-size: 12px;
 }
 
+@media only screen and (max-width: 479px) {
+    .disclaimer {
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+}
+
 
 /*------------------- 5.29 Medical Protection -------------------*/
+
+.med-faq {
+    margin-top: -70px;
+    margin-bottom: -50px;
+}
+
+.med-faq .section-subtitle {
+    color: #fa360a;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 479px) {
+    .med-faq {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .med-faq .section-subtitle {
+        text-align: center;
+    }
+}
 
 .desktop-hide {
     display: none;
@@ -16083,11 +16124,15 @@ div#wrapper.open>.offcanvas-mask {
     }
 }
 
+.medical-protection {
+    padding-bottom: 90px;
+}
+
 .medical-protection .section-subtitle {
     color: #fa360a;
     font-size: 16px;
-    margin-bottom: 0;
-    font-weight: 500;
+    /* margin-bottom: 0; */
+    font-weight: 700;
 }
 
 .medical-protection .section-title {
@@ -16111,7 +16156,7 @@ div#wrapper.open>.offcanvas-mask {
         text-align: center;
         font-size: 18px;
         font-weight: 700;
-        padding-bottom: 5px;
+        /* padding-bottom: 5px; */
     }
     .medical-protection .section-title {
         text-align: center;
