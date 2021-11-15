@@ -53,6 +53,7 @@ CSS INDEX
     5.26 Calculator
     5.27 Hibah Amanah Takaful
     5.28 Investment
+    5.29 Medical Protection
     
 /*=======================================================================
 /*=======================================================================
@@ -9239,7 +9240,7 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .consulting-service-wrap2 {
-    background-image: url(img/team/team4.jpg);
+    background-image: url(img/medicalCoverage/family.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -9429,12 +9430,14 @@ div#wrapper.open>.offcanvas-mask {
 }
 
 .consulting-service4 {
-    background-color: rgba(26, 26, 26, 0.5);
-    padding: 40px 40px 25px 40px;
+    /* background-color: rgba(26, 26, 26, 0.5); */
+    background-color: #0e0e0e;
+    padding: 20px 20px 10px 20px;
     border: none;
     text-align: center;
     position: relative;
     transition: all 0.5s ease-in-out;
+    min-height: 280px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -9446,11 +9449,12 @@ div#wrapper.open>.offcanvas-mask {
 @media only screen and (max-width: 575px) {
     .consulting-service4 {
         padding: 43px 25px 25px 25px;
+        border: 2px solid #fa360a;
     }
 }
 
 .consulting-service4:hover {
-    background-color: #0e0e0e;
+    /* background-color: #0e0e0e; */
 }
 
 .consulting-service4:hover:after {
@@ -9507,6 +9511,7 @@ div#wrapper.open>.offcanvas-mask {
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    text-align: center;
 }
 
 
@@ -9735,16 +9740,36 @@ div#wrapper.open>.offcanvas-mask {
     }
 }
 
+.single-service-box1 {
+    margin-top: -70px;
+    margin-bottom: -50px;
+}
+
 .single-service-box1 .section-title {
     color: #000;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 1199px) {
+    .single-service-box1 {
+        margin-top: -10px;
+        margin-bottom: 0px;
+    }
     .single-service-box1 .section-title {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-service-box1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .single-service-box1 .section-title {
+        text-align: center;
     }
 }
 
@@ -15636,6 +15661,13 @@ div#wrapper.open>.offcanvas-mask {
     margin-top: -20%;
 }
 
+@media only screen and (max-width: 767px) {
+    .widget-banner {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+
 .widget-details .project-list .btn-service {
     color: #FA360A;
     font-weight: 600;
@@ -16033,4 +16065,67 @@ div#wrapper.open>.offcanvas-mask {
 
 .disclaimer-investment {
     font-size: 12px;
+}
+
+
+/*------------------- 5.29 Medical Protection -------------------*/
+
+.desktop-hide {
+    display: none;
+}
+
+@media only screen and (max-width: 479px) {
+    .mobile-hide {
+        display: none;
+    }
+    .desktop-hide {
+        display: block;
+    }
+}
+
+.medical-protection .section-subtitle {
+    color: #fa360a;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.medical-protection .section-title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .medical-protection .section-title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .medical-protection {
+        padding-bottom: 100px;
+    }
+    .medical-protection .section-subtitle {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 5px;
+    }
+    .medical-protection .section-title {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .medical-protection .section-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.consulting-service5 .med-subtitle {
+    color: #fa360a;
+    margin-bottom: 0px;
 }
