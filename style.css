@@ -8852,7 +8852,7 @@ div#wrapper.open>.offcanvas-mask {
 
 .company-value-wrap .item-content p {
     color: #646464;
-    width: 42%;
+    /* width: 42%; */
     margin: 0 auto;
     margin-bottom: 0;
 }
