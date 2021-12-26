@@ -1,5 +1,5 @@
 # awanadvisory
-This website was created specifically for Awan Advisory, which provides insurance finance, life planning, and wealth management services. The design focuses on the professional introduction of brands and products to customers.
+This website was created specifically for Awan Advisory, which provides insurance finance, life planning, and wealth management services. The design focuses on the professional brands and products.
 
 I went through several phases when developing this site. Among them are;
 * The requirements and design phase.
